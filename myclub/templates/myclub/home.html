@@ -1,0 +1,21 @@
+{% extends 'myclub/base.html' %}
+
+{% block content %}
+<center>
+<h1>Hello {{ name }} Events for {{month}} {{year}} </h1>
+</br>
+<h2>{{ month_number }}</h2>
+
+</br>
+
+As of {{time}}
+
+</br>
+</br>
+{{ cal | safe }}
+</br></br></br>
+
+Copyright (c) {{ current_year }}
+</center>
+
+{% endblock %}
